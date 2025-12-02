@@ -1,14 +1,13 @@
 class Sysdig < Formula
   desc "System-level exploration and troubleshooting tool"
   homepage "https://sysdig.com/"
-  url "https://github.com/draios/sysdig/archive/refs/tags/0.40.1.tar.gz"
-  sha256 "f4d465847ba8e814958b5f5818f637595f3d78ce93dbc3b8ff3ee65a80a9b90f"
+  url "https://github.com/draios/sysdig/archive/refs/tags/0.41.0.tar.gz"
+  sha256 "4fec8c6fec11f53db41f7656bcd1ffdff7e6f4bc21e34796175d954ce85f1f3a"
   license all_of: [
     "Apache-2.0",
     { any_of: ["GPL-2.0-only", "MIT"] },                  # `falcosecurity-libs`, driver/
     { "GPL-2.0-only" => { with: "Linux-syscall-note" } }, # `falcosecurity-libs`, userspace/libscap/compat/
   ]
-  revision 2
   head "https://github.com/draios/sysdig.git", branch: "dev"
 
   livecheck do
